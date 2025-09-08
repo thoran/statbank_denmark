@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.statbank.dk/v1/subjects?format=json&lang=da
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Open-Timeout:
+      - '30'
+      Read-Timeout:
+      - '30'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/10.0
+      Statbankapi-Request-Id:
+      - cfd72c19-f02b-481d-b0bb-9c3156bb5fc4
+      Access-Control-Expose-Headers:
+      - StatbankAPI-Request-Id
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Sat, 06 Sep 2025 13:53:02 GMT
+      Content-Length:
+      - '897'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOiIxIiwiZGVzY3JpcHRpb24iOiJCb3JnZXJlIiwiYWN0aXZlIjp0cnVlLCJoYXNTdWJqZWN0cyI6dHJ1ZSwic3ViamVjdHMiOltdfSx7ImlkIjoiMiIsImRlc2NyaXB0aW9uIjoiQXJiZWpkZSBvZyBpbmRrb21zdCIsImFjdGl2ZSI6dHJ1ZSwiaGFzU3ViamVjdHMiOnRydWUsInN1YmplY3RzIjpbXX0seyJpZCI6IjMiLCJkZXNjcmlwdGlvbiI6IsOYa29ub21pIiwiYWN0aXZlIjp0cnVlLCJoYXNTdWJqZWN0cyI6dHJ1ZSwic3ViamVjdHMiOltdfSx7ImlkIjoiNCIsImRlc2NyaXB0aW9uIjoiU29jaWFsZSBmb3Job2xkIiwiYWN0aXZlIjp0cnVlLCJoYXNTdWJqZWN0cyI6dHJ1ZSwic3ViamVjdHMiOltdfSx7ImlkIjoiNSIsImRlc2NyaXB0aW9uIjoiVWRkYW5uZWxzZSBvZyBmb3Jza25pbmciLCJhY3RpdmUiOnRydWUsImhhc1N1YmplY3RzIjp0cnVlLCJzdWJqZWN0cyI6W119LHsiaWQiOiI2IiwiZGVzY3JpcHRpb24iOiJFcmh2ZXJ2c2xpdiIsImFjdGl2ZSI6dHJ1ZSwiaGFzU3ViamVjdHMiOnRydWUsInN1YmplY3RzIjpbXX0seyJpZCI6IjciLCJkZXNjcmlwdGlvbiI6IlRyYW5zcG9ydCIsImFjdGl2ZSI6dHJ1ZSwiaGFzU3ViamVjdHMiOnRydWUsInN1YmplY3RzIjpbXX0seyJpZCI6IjgiLCJkZXNjcmlwdGlvbiI6Ikt1bHR1ciBvZyBmcml0aWQiLCJhY3RpdmUiOnRydWUsImhhc1N1YmplY3RzIjp0cnVlLCJzdWJqZWN0cyI6W119LHsiaWQiOiI5IiwiZGVzY3JpcHRpb24iOiJNaWxqw7ggb2cgZW5lcmdpIiwiYWN0aXZlIjp0cnVlLCJoYXNTdWJqZWN0cyI6dHJ1ZSwic3ViamVjdHMiOltdfSx7ImlkIjoiMTkiLCJkZXNjcmlwdGlvbiI6Ik9tIERhbm1hcmtzIFN0YXRpc3RpayIsImFjdGl2ZSI6dHJ1ZSwiaGFzU3ViamVjdHMiOnRydWUsInN1YmplY3RzIjpbXX1d
+  recorded_at: Sat, 06 Sep 2025 13:53:02 GMT
+recorded_with: VCR 6.3.1

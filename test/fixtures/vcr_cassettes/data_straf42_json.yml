@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.statbank.dk/v1/data
+    body:
+      encoding: UTF-8
+      string: '{"table":"STRAF42","lang":"en","format":"jsonstat","valuePresentation":"Default","variables":[{"code":"HERKOMST1","values":["00"]},{"code":"TID","values":["2023"]}]}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/10.0
+      Statbankapi-Request-Id:
+      - 8ce21d41-17f1-4614-bdfd-002aa826b7f1
+      Access-Control-Expose-Headers:
+      - StatbankAPI-Request-Id
+      Content-Disposition:
+      - attachment; filename=STRAF42.json
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Sun, 07 Sep 2025 17:37:13 GMT
+    body:
+      encoding: UTF-8
+      string: '{"dataset":{"dimension":{"HERKOMST1":{"label":"national origin","category":{"index":{"00":0},"label":{"00":"Total"}}},"ContentsCode":{"label":"Indhold","category":{"index":{"STRAF42":0},"label":{"STRAF42":"Decisions,
+        total"},"unit":{"STRAF42":{"base":"Number","decimals":0}}}},"Tid":{"label":"time","category":{"index":{"2023":0},"label":{"2023":"2023"}}},"id":["HERKOMST1","ContentsCode","Tid"],"size":[1,1,1],"role":{"metric":["ContentsCode"],"time":["Tid"]}},"label":"Decisions,
+        total by national origin, Indhold and time","source":"Statistics Denmark","updated":"2025-03-25T07:00:00Z","value":[233454],"extension":{"px":{"infofile":"https://www.dst.dk/documentationofstatistics/3806026b-3f64-451f-9836-c7a442da922f","tableid":"STRAF42","decimals":0}}}}'
+  recorded_at: Sun, 07 Sep 2025 17:37:11 GMT
+recorded_with: VCR 6.3.1

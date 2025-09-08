@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.statbank.dk/v1/data
+    body:
+      encoding: UTF-8
+      string: '{"table":"STRAF42","lang":"en","format":"jsonstat","valuePresentation":"Default"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/10.0
+      Statbankapi-Request-Id:
+      - c11bfe55-7f34-44c5-8351-03119a14af6a
+      Access-Control-Expose-Headers:
+      - StatbankAPI-Request-Id
+      Content-Disposition:
+      - attachment; filename=STRAF42.json
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Sun, 07 Sep 2025 17:49:25 GMT
+    body:
+      encoding: UTF-8
+      string: '{"dataset":{"dimension":{"ContentsCode":{"label":"Indhold","category":{"index":{"STRAF42":0},"label":{"STRAF42":"Decisions,
+        total"},"unit":{"STRAF42":{"base":"Number","decimals":0}}}},"Tid":{"label":"time","category":{"index":{"2024":0},"label":{"2024":"2024"}}},"id":["ContentsCode","Tid"],"size":[1,1],"role":{"metric":["ContentsCode"],"time":["Tid"]}},"label":"Decisions,
+        total by Indhold and time","source":"Statistics Denmark","updated":"2025-03-25T07:00:00Z","value":[227774],"extension":{"px":{"infofile":"https://www.dst.dk/documentationofstatistics/3806026b-3f64-451f-9836-c7a442da922f","tableid":"STRAF42","decimals":0}}}}'
+  recorded_at: Sun, 07 Sep 2025 17:49:24 GMT
+recorded_with: VCR 6.3.1

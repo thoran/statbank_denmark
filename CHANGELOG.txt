@@ -1,0 +1,9 @@
+# CHANGELOG.md
+
+## [0.0.0] - 2025-09-08
+- Initial release
+- subjects(): /subjects endpoint
+- tables(): /tables endpoint
+- tableinfo(): /tableinfo endpoint
+- data(): /data endpoint
+- search(): Search all tables by string.

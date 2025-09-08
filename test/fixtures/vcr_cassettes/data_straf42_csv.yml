@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.statbank.dk/v1/data
+    body:
+      encoding: UTF-8
+      string: '{"table":"STRAF42","lang":"en","format":"csv","valuePresentation":"Default","variables":[{"code":"HERKOMST1","values":["00"]},{"code":"TID","values":["2023"]}]}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/csv; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/10.0
+      Statbankapi-Request-Id:
+      - 8216e6ab-04cb-4076-8d4d-d59288bcc412
+      Access-Control-Expose-Headers:
+      - StatbankAPI-Request-Id
+      Content-Disposition:
+      - attachment; filename=STRAF42.csv
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Sun, 07 Sep 2025 17:46:36 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/SEVSS09NU1QxO1RJRDtJTkRIT0xEDQpUb3RhbDsyMDIzOzIzMzQ1NA0K
+  recorded_at: Sun, 07 Sep 2025 17:46:35 GMT
+recorded_with: VCR 6.3.1

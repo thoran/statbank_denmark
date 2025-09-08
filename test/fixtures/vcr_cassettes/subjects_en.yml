@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.statbank.dk/v1/subjects?format=json&lang=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Open-Timeout:
+      - '30'
+      Read-Timeout:
+      - '30'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/10.0
+      Statbankapi-Request-Id:
+      - 7ef20414-2a51-44e6-8bac-2a146c8b6ef9
+      Access-Control-Expose-Headers:
+      - StatbankAPI-Request-Id
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Sat, 06 Sep 2025 13:52:50 GMT
+      Content-Length:
+      - '903'
+    body:
+      encoding: UTF-8
+      string: '[{"id":"1","description":"People","active":true,"hasSubjects":true,"subjects":[]},{"id":"2","description":"Labour
+        and income","active":true,"hasSubjects":true,"subjects":[]},{"id":"3","description":"Economy","active":true,"hasSubjects":true,"subjects":[]},{"id":"4","description":"Social
+        conditions","active":true,"hasSubjects":true,"subjects":[]},{"id":"5","description":"Education
+        and research","active":true,"hasSubjects":true,"subjects":[]},{"id":"6","description":"Business","active":true,"hasSubjects":true,"subjects":[]},{"id":"7","description":"Transport","active":true,"hasSubjects":true,"subjects":[]},{"id":"8","description":"Culture
+        and leisure","active":true,"hasSubjects":true,"subjects":[]},{"id":"9","description":"Environment
+        and energy","active":true,"hasSubjects":true,"subjects":[]},{"id":"19","description":"About
+        Statistics Denmark","active":true,"hasSubjects":true,"subjects":[]}]'
+  recorded_at: Sat, 06 Sep 2025 13:52:49 GMT
+recorded_with: VCR 6.3.1
