@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.files = [
     'CHANGELOG.txt',
     'Gemfile',
+    'LICENSE',
     'README.md',
     'statbank_denmark.gemspec',
     Dir['lib/**/*.rb'],

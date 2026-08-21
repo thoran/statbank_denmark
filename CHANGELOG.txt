@@ -1,5 +1,10 @@
 # CHANGELOG.md
 
+## [0.0.1] - 2026-08-22
+- + LICENSE: the MIT text, copyright 2025-2026 thoran. The gemspec has declared MIT while the repository carried no licence text at all.
+- ~ statbank_denmark.gemspec: + 'LICENSE' to spec.files, so the gem carries what the declaration claims.
+- ~ StatBankDenmark::VERSION: /0.0.0/0.0.1/
+
 ## [0.0.0] - 2025-09-08
 - Initial release
 - subjects(): /subjects endpoint
