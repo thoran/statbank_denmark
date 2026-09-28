@@ -1,0 +1,44 @@
+# statbank_denmark/CHANGELOG
+
+## 20260928
+
+0.1.0: + StatBankDenmark::Tables
+
+1. + StatBankDenmark::Tables: six crime and population tables and their dimensions, taken from table_info.
+2. + StatBankDenmark::Tables.[], .ids, .dimensions, and .column.
+3. + test/StatBankDenmark/Tables_test.rb
+4. ~ lib/StatBankDenmark.rb: + require_relative './StatBankDenmark/Tables'
+5. ~ statbank_denmark.gemspec: - spec.date
+6. ~ StatBankDenmark::VERSION: /0.0.2/0.1.0/
+
+0.0.2: ~ test/StatBankDenmark_test.rb: /test_helper/helper/
+
+1. It named a file which does not exist, so this test had never run.
+2. ~ StatBankDenmark::VERSION: /0.0.1/0.0.2/
+
+
+## 20260822
+
+0.0.1: + LICENSE
+
+1. + LICENSE
+2. ~ statbank_denmark.gemspec: + 'LICENSE'
+3. ~ StatBankDenmark::VERSION: /0.0.0/0.0.1/
+
+
+## 20250908
+
+0.0.0: + /subjects, /tables, /tableinfo, and /data endpoints; and provide basic table searching.
+
+1. + StatBankDenmark
+2. + StatBankDenmark.subjects: A convenience method StatBankDenmark::Client#subjects.
+3. + StatBankDenmark.tables: A convenience method StatBankDenmark::Client#tables.
+4. + StatBankDenmark.table_info: A convenience method StatBankDenmark::Client#table_info.
+5. + StatBankDenmark.data: A convenience method StatBankDenmark::Client#data.
+6. + StatBankDenmark.search: A convenience method StatBankDenmark::Client#search.
+7. + StatBankDenmark::Client
+8. + StatBankDenmark::Client#subjects: /subjects endpoint
+9. + StatBankDenmark::Client#tables: /tables endpoint
+10. + StatBankDenmark::Client#table_info: /tableinfo endpoint
+11. + StatBankDenmark::Client#data: /data endpoint
+12. + StatBankDenmark::Client.search: Search all tables by string.

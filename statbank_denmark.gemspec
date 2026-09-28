@@ -4,7 +4,6 @@ Gem::Specification.new do |spec|
   spec.name = 'statbank_denmark'
 
   spec.version = StatBankDenmark::VERSION
-  spec.date = '2025-09-09'
 
   spec.summary = "A Ruby client for the StatBank Denmark API."
   spec.description = "A Ruby client for easy access to StatBank; Denmark's official statistics (Danmarks Statistik) REST API."
@@ -17,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.7'
 
   spec.files = [
-    'CHANGELOG.txt',
+    'CHANGELOG',
     'Gemfile',
     'LICENSE',
     'README.md',

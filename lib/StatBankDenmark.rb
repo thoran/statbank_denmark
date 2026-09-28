@@ -3,6 +3,7 @@
 
 require_relative './StatBankDenmark/VERSION'
 require_relative './StatBankDenmark/Client'
+require_relative './StatBankDenmark/Tables'
 
 module StatBankDenmark
   class << self

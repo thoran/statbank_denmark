@@ -114,6 +114,37 @@ client.search('befolkning', lang: 'da') # lang: 'da'
 client.search('BEFOLKNING', lang: 'da') # case insensitive search and lang: 'da'
 ```
 
+### Table metadata
+
+Six crime and population tables and their dimensions. `table_info` answers with
+the values a dimension takes; this is a starting point for choosing which table
+to ask.
+
+```ruby
+# Which tables are described here
+StatBankDenmark::Tables.ids # => ["STRAF42", "STRAF10", "STRAFNA3", "FOLK1C", "FOLK2", "VAN66"]
+
+# What a table is
+StatBankDenmark::Tables['STRAF42'][:name] # => "Decisions, total"
+StatBankDenmark::Tables['straf42'] # the id is taken in any case
+
+# Every dimension of a table, named as the API names them
+StatBankDenmark::Tables.dimensions('STRAF10').keys # => ["OVERTRÆD", "Tid"]
+
+# What a dimension is called once the row is read as Ruby
+StatBankDenmark::Tables.column('STRAF42', 'HERKOMST1') # => :national_origin
+StatBankDenmark::Tables.column('FOLK2', 'STATSB') # => :citizenship
+```
+
+Two things are worth knowing before choosing a table. `HERKOMST1` in `STRAF42`
+and `HERKOMST` in `FOLK1C` and `FOLK2` are not two spellings of one dimension —
+the first is citizenship, the second residence — so they do not substitute. And
+`STRAFNA3` and `VAN66` have no ancestry dimension at all; `IELAND`, country of
+origin, is the nearest either offers.
+
+Asking with a dimension a table has not got answers 400, which reads as the table
+being broken when it is the request that is wrong.
+
 ## Contributing
 
 1. Fork it (https://github.com/thoran/statbank_denmark/fork)
