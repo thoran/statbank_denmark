@@ -1,5 +1,9 @@
 # CHANGELOG.md
 
+## [0.0.2] - 2026-09-28
+- ~ test/StatBankDenmark_test.rb: /test_helper/helper/. It named a file which does not exist, so this test had never run.
+- ~ StatBankDenmark::VERSION: /0.0.1/0.0.2/
+
 ## [0.0.1] - 2026-08-22
 - + LICENSE: the MIT text, copyright 2025-2026 thoran. The gemspec has declared MIT while the repository carried no licence text at all.
 - ~ statbank_denmark.gemspec: + 'LICENSE' to spec.files, so the gem carries what the declaration claims.

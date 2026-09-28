@@ -1,6 +1,6 @@
 # test/StatBankDenmark_test.rb
 
-require_relative './test_helper'
+require_relative './helper'
 
 describe StatBankDenmark do
   describe "module methods" do
