@@ -2,6 +2,15 @@
 
 ## 20260928
 
+0.1.2: + Rakefile
+
+1. + Rakefile
+2. ~ statbank_denmark.gemspec: + 'Rakefile' to spec.files; + rake
+3. ~ statbank_denmark.gemspec: + Gem::Specification#dependencies= and #development_dependencies=
+4. ~ statbank_denmark.gemspec: /Ruby/MIT/
+5. ~ README.md: /Ruby License/MIT License/
+6. ~ StatBankDenmark::VERSION: /0.1.1/0.1.2/
+
 0.1.1: alias_method :tableinfo, :table_info
 
 1. + StatBankDenmark.tableinfo
