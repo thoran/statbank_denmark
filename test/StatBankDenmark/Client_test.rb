@@ -132,6 +132,11 @@ describe StatBankDenmark::Client do
       end
     end
 
+    it "answers to tableinfo, which is what the endpoint is called" do
+      _(client).must_respond_to(:tableinfo)
+      _(StatBankDenmark::Client.instance_method(:tableinfo).original_name).must_equal(:table_info)
+    end
+
     it "raises ArgumentError for nil table_id" do
       _(proc{client.table_info(nil)}).must_raise(ArgumentError)
     end

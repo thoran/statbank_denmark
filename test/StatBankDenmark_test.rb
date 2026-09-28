@@ -11,5 +11,10 @@ describe StatBankDenmark do
       _(StatBankDenmark).must_respond_to(:data)
       _(StatBankDenmark).must_respond_to(:search)
     end
+
+    it "answers to tableinfo, which is what the endpoint is called" do
+      _(StatBankDenmark).must_respond_to(:tableinfo)
+      _(StatBankDenmark.method(:tableinfo).original_name).must_equal(:table_info)
+    end
   end
 end

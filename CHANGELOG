@@ -2,6 +2,12 @@
 
 ## 20260928
 
+0.1.1: alias_method :tableinfo, :table_info
+
+1. + StatBankDenmark.tableinfo
+2. + StatBankDenmark::Client#tableinfo
+3. ~ StatBankDenmark::VERSION: /0.1.0/0.1.1/
+
 0.1.0: + StatBankDenmark::Tables
 
 1. + StatBankDenmark::Tables: six crime and population tables and their dimensions, taken from table_info.

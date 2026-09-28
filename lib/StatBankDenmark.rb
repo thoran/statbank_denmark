@@ -18,6 +18,9 @@ module StatBankDenmark
     def table_info(table_id, **options)
       client.table_info(table_id, **options)
     end
+    # The endpoint is /tableinfo, which is how StatBank's own documentation names
+    # it, and the spelling anyone arriving from there reaches for first.
+    alias_method :tableinfo, :table_info
 
     def data(table_id, **options)
       client.data(table_id, **options)

@@ -58,6 +58,7 @@ StatBankDenmark.tables(include_inactive: true, subject: 4)
 StatBankDenmark.table_info('STRAF42') # implicitly format: 'json'
 StatBankDenmark.table_info('STRAF42', format: 'json') # explicitly format: 'json'
 StatBankDenmark.table_info('STRAF42', format: 'csv') # format: 'csv'
+StatBankDenmark.tableinfo('STRAF42') # an alias, /tableinfo being the endpoint
 
 # Get data from a specific table
 StatBankDenmark.data('STRAF42') # implicitly format: 'csv'

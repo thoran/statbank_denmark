@@ -72,6 +72,9 @@ module StatBankDenmark
       )
       handle_response(response)
     end
+    # The endpoint is /tableinfo, which is how StatBank's own documentation names
+    # it, and the spelling anyone arriving from there reaches for first.
+    alias_method :tableinfo, :table_info
 
     def data(
       table_id,
